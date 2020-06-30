@@ -1,0 +1,23 @@
+.list-wrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list-item {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+
+  border: 1px solid black;
+  background-color: greenyellow;
+  border-radius: 10px;
+  line-height: 50px;
+
+  font-size: 30px;
+}
