@@ -6,25 +6,25 @@ import { Shape } from '../../Shape/Shape';
 
 export class GoodsList extends React.Component {
   state = {
-    goodsItems: [...this.props.goodsItems],
+    goodsItems: this.props.goodsItems,
     minLength: 1,
   }
 
   reverse = () => {
     this.setState(prevState => ({
-      goodsItems: prevState.goodsItems.reverse(),
+      goodsItems: [...prevState.goodsItems.reverse()],
     }));
   }
 
   sortByLength = () => {
     this.setState(prevState => ({
-      goodsItems: prevState.goodsItems.sort((a, b) => a.length - b.length),
+      goodsItems: [...prevState.goodsItems.sort((a, b) => a.length - b.length)],
     }));
   }
 
   sortByName = () => {
     this.setState(prevState => ({
-      goodsItems: prevState.goodsItems.sort((a, b) => a.localeCompare(b)),
+      goodsItems: [...prevState.goodsItems.sort((a, b) => a.localeCompare(b))],
     }));
   }
 
