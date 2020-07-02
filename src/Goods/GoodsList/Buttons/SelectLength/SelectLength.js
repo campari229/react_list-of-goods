@@ -11,7 +11,7 @@ for (let i = 1; i < 11; i += 1) {
 
 export const SelectLength = ({ setMinLength }) => (
   <select
-    onClick={event => setMinLength(event.target.value)}
+    onChange={event => setMinLength(event.target.value)}
     className="select"
   >
     {selectValues.map(value => (
